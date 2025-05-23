@@ -14,3 +14,8 @@ Using the same URL (amqp://guest:guest@localhost:5672) means both publisher and 
 
 When cargo run is executed on the publisher, it sends 5 UserCreatedEventMessage events to the RabbitMQ broker. The subscriber receives and processes them right away, which is shown as a brief spike in the message rate graph on the RabbitMQ dashboard.
 
+## RABBITMQ MONITOR
+
+![initial_RabbitMQ](image/publisher3.png)
+
+When the publisher runs, RabbitMQ shows a quick spike in the "message rates" chart, indicating a burst of messages being sent to the broker. These spikes reappear with each execution, confirming that messages are being actively published and quickly consumed by the subscriber.

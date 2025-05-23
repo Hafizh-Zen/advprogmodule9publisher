@@ -7,3 +7,10 @@ Using the same URL (amqp://guest:guest@localhost:5672) means both publisher and 
 ## RABBITMQ
 
 ![initial_RabbitMQ](image/publisher1.png)
+
+## RABBITMQ AFTER RUN
+
+![initial_RabbitMQ](image/publisher2.png)
+
+When cargo run is executed on the publisher, it sends 5 UserCreatedEventMessage events to the RabbitMQ broker. The subscriber receives and processes them right away, which is shown as a brief spike in the message rate graph on the RabbitMQ dashboard.
+
